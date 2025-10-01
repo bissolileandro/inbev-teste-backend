@@ -59,27 +59,7 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
         /// </summary>
         public void CalculateTotals()
         {
-            var discountPercentual = 0.0m;
-
-            //var discountProduct = ProductsSales
-            //    .GroupBy(i => i.ProductId)
-            //    .Select(g => new ProductSale
-            //    {
-            //        ProductId = g.Key,
-            //        Quantity = g.Sum(x => x.Quantity),
-            //        UnitPrice = g.First().UnitPrice,                    
-            //    })
-            //    .Where(c => c.Status == ProductSaleStatus.Active)
-            //    .ToList();
-
-            //foreach (var item in discountProduct)
-            //{
-            //    if (item.Quantity > 4)
-            //    {
-                    
-            //        item.ApplyTotalItem();  
-            //    }
-            //}
+            var discountPercentual = 0.0m;            
 
             foreach (var item in ProductsSales)
             {
